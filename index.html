@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+	<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script type="application/x-javascript" src="face-api.js"></script>    
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      #expr {
+        width: 200px;
+        height: 50px;
+        margin: 5px 0px;
+        text-align: center;
+      }
+
+      /* canvas {
+        position: absolute;
+      } */
+    </style>
+  </head>
+  <body>
+    <video id="video" width="720" height="560" autoplay muted style="max-width: 90vw;"></video>
+    <div id="expr">Loading</div>
+	<script type="text/javascript" defer src="script.js"></script>
+  </body>
+</html>
